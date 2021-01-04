@@ -17,7 +17,7 @@ public class App {
                 Patient.setGroup(patient);
                 Patient.setDrug(patient);
                 logger.info(patient.toString());
-                System.out.println(patient.getDrug());
+                System.out.println("The drug for this patient is " + patient.getDrug());
                 System.out.println("Please input the next patient's name, age and weight, separate with whitespace, or press enter to quit");
                 input = keyboard.nextLine();
             } catch(Exception e) {
