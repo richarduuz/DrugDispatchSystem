@@ -1,0 +1,5 @@
+2021-01-04 17:08:38 INFO Name: richard Age: 75 Weight: 75.0 Random number: 0.63338304 Group: 3 Drug: A
+2021-01-04 17:08:43 INFO Name: lydia Age: 55 Weight: 55.0 Random number: 0.08822745 Group: 1 Drug: A
+2021-01-04 17:08:48 INFO Name: Vincent Age: 55 Weight: 55.0 Random number: 0.7191115 Group: 1 Drug: B
+2021-01-04 17:08:55 INFO Name: Vincent Age: 80 Weight: 80.0 Random number: 0.59759426 Group: 3 Drug: A
+2021-01-04 17:08:57 WARN Invalid input: asdfafsfd
