@@ -24,7 +24,7 @@ java -cp app-1.0-SNAPSHOT-jar-with-dependencies.jar -Dlog4j.configuration=file"l
 
 ## Input format
 
-Input the patient's name, age and weight via keyborad separate by a whitespace. For example 
+Input the patient's name, age(years) and weight(kilogram) in order via keyborad separate by a whitespace. For example 
 
 ```html
 richard 25 65

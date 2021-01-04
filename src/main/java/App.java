@@ -13,11 +13,11 @@ public class App {
         while(input.length() != 0){
             try {
                 String[] info = input.split(" ");
-                Patient patient = new Patient(info[0], Integer.parseInt(info[2]), Float.parseFloat(info[2]));
+                Patient patient = new Patient(info[0], Integer.parseInt(info[1]), Float.parseFloat(info[2]));
                 Patient.setGroup(patient);
                 Patient.setDrug(patient);
                 logger.info(patient.toString());
-                System.out.println(patient.getDrug());
+                System.out.println("The drug for this patient is " + patient.getDrug());
                 System.out.println("Please input the next patient's name, age and weight, separate with whitespace, or press enter to quit");
                 input = keyboard.nextLine();
             } catch(Exception e) {
