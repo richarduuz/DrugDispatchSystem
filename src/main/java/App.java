@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         PropertyConfigurator.configure("log.properties");
-        System.out.println("Please input the patient's name, age and weight, separate with whitespace, or press enter to quit");
+        System.out.println("Please input the patient's name, age and weight(kilogram) in order, separate with whitespace, or press enter to quit");
         Scanner keyboard = new Scanner(System.in);
         String input = keyboard.nextLine();
         while(input.length() != 0){
