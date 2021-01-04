@@ -13,7 +13,7 @@ public class App {
         while(input.length() != 0){
             try {
                 String[] info = input.split(" ");
-                Patient patient = new Patient(info[0], Integer.parseInt(info[2]), Float.parseFloat(info[2]));
+                Patient patient = new Patient(info[0], Integer.parseInt(info[1]), Float.parseFloat(info[2]));
                 Patient.setGroup(patient);
                 Patient.setDrug(patient);
                 logger.info(patient.toString());
