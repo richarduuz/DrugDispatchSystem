@@ -5,65 +5,18 @@ import java.util.Random;
  * The Patient Class
  */
 public class Patient {
+    /** Patient's name **/
     private String name;
+    /** Patient's age **/
     private int age;
+    /** Patient's weight **/
     private float weight;
+    /** Random number to determine the durg **/
     private float randNum;
+    /** Patient's group, according to the weight and age **/
     private int group;
+    /** Patient's drug type **/
     private char drug;
-
-
-    /**
-     * Set the group of the patient according to his or her age and weight.
-     * @param patient
-     */
-    public static void setGroup(Patient patient){
-        if (patient.age < 75){
-            if (patient.weight < 65) patient.group = 1;
-            else patient.group =  2;
-        } else {
-            if (patient.weight < 65) patient.group = 2;
-            else patient.group = 3;
-        }
-    }
-
-    /**
-     * Set the drug type for this patient according to his or her group and the random number.
-     * @param patient
-     */
-    public static void setDrug(Patient patient){
-        Random rand = new Random();
-        float tmp = rand.nextFloat();
-        patient.randNum = tmp;
-        char result = '.';
-        switch(patient.group){
-            case(1): {
-                if (tmp < 0.25){
-                    result = 'A';
-                } else {
-                    result = 'B';
-                }
-                break;
-            }
-            case(2): {
-                if (tmp < 0.5){
-                    result = 'A';
-                } else {
-                    result = 'B';
-                }
-                break;
-            }
-            case(3): {
-                if (tmp < 0.75){
-                    result = 'A';
-                } else {
-                    result = 'B';
-                }
-                break;
-            }
-        }
-        patient.drug = result;
-    }
 
     /**
      * Patient Constructor
@@ -102,6 +55,22 @@ public class Patient {
 
     public float getRandNum() {
         return randNum;
+    }
+
+    public void setGroup(int group) {
+        if (group == 1 || group == 2 || group == 3){
+            this.group = group;
+        }
+    }
+
+    public void setRandNum(float randNum) {
+        this.randNum = randNum;
+    }
+
+    public void setDrug(char drug) {
+        if (drug == 'A' || drug == 'B') {
+            this.drug = drug;
+        }
     }
 
     @Override
