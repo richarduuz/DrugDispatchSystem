@@ -21,7 +21,6 @@ public class App {
                 PatientUtil.setDrug(patient);
                 logger.info(patient.toString());
                 System.out.println("The drug for this patient is " + patient.getDrug());
-                System.out.println("Please input the next patient's name, age and weight, separate with whitespace, or press enter to quit");
             } catch (InputMismatchException e){
                 System.out.println(e.getMessage());
                 logger.warn("Invalid age or weight: "+ input);
@@ -29,7 +28,7 @@ public class App {
                 System.out.println("Invalid input format");
                 logger.warn("Invalid input: "+ input);
             } finally {
-                System.out.println("Invalid input, please input again");
+                System.out.println("Please input the next patient's name, age and weight, separate with whitespace, or press enter to quit");
                 input = "";
                 input = keyboard.nextLine();
             }
