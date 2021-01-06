@@ -34,7 +34,7 @@ If the input format is wrong, the system will let you input again.
 
 To exit the system, press enter without anything input. 
 
-All the patients' infomation will be recorded in the `log` directory in the `log.out` file, including the valid input. 
+All the patients' infomation will be recorded in the `log` directory in the `log.out` file, including the invalid input. 
 
 
 
